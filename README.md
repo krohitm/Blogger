@@ -1,6 +1,9 @@
 # README
 
-This is a blogger built in Ruby on Rails. Below is the configuration of the website:
+This is a blogger built in Ruby on Rails. Here is a link to the website:
+#### https://krmblog.herokuapp.com/
+
+Below is the configuration of the website:
 
 * Ruby version: 2.3.3
 * Rails version: 5.0.1
