@@ -1,5 +1,15 @@
 class ArticlesController < ApplicationController
+	before_action :control_article, only: [:new, :create, :edit, :update, :destroy]
 	include ArticlesHelper
+
+	def control_article
+		unless logged_in?
+			flash[:error]  ="You are not authorized for this."
+			redirect_to root_path
+			return false
+		end
+	end
+
 	def index
 		@articles = Article.all
 	end
